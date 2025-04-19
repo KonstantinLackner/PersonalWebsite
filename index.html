@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demokratie-X</title>
+    <link href="./src/input.css" rel="stylesheet">
+    <link rel="icon" href="./img/logo_favicon.png">
+    <script type="module" src="./src/main.js"></script>
+</head>
+
+<body x-data="$store.langSwitcher" class="bg-white dark:bg-darkBlue text-center flex items-center justify-center min-h-screen">
+
+
+<!-- Preloader (Only visible when loading=true) -->
+<div x-show="loading" class="fixed inset-0 flex items-center justify-center bg-mediumBlue">
+    <div class="bg-white w-32 h-32 shadow-lg flex flex-col items-center justify-center rounded-lg">
+        <!-- Spinner -->
+        <div class="w-12 h-12 border-4 border-blue-500 border-t-white rounded-full animate-spin"></div>
+        <!-- Loading Text -->
+        <p class="mt-4 text-gray-600" x-text="texts?.[lang]?.loading"></p>
+    </div>
+</div>
+
+
+<!-- Main Content (Only visible when loading=false) -->
+<div x-show="!loading" x-transition.opacity class="p-8 bg-white shadow-lg rounded-lg text-center" style="display: none;">
+    <!-- Test Text -->
+    <p x-text="texts?.[lang]?.test_test" class="mb-5 text-black text-2xl font-semibold"></p>
+
+    <!-- Language Switcher -->
+    <div x-data="{ open: false }" class="relative w-max">
+        <button @click="open = !open" class="group flex items-center px-4 py-2 bg-darkBlue text-white font-medium">
+            <p class="mr-2 pointer-events-none">🌍</p>
+            <p class="group-hover:underline" x-text="lang === 'en' ? texts?.[lang]?.lang_button_en : texts?.[lang]?.lang_button_de"></p>
+            <svg class="w-2.5 h-2.5 ml-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+            </svg>
+        </button>
+
+        <div x-show="open" x-transition class="absolute w-full bg-mediumBlue border border-0 text-white shadow-lg" @click.away="open = false">
+            <button x-show="lang !== 'en'" @click="switchLang('en'); open = false" class="block w-full px-4 py-2 text-left hover:underline" x-text="texts?.[lang]?.lang_button_en"></button>
+            <button x-show="lang !== 'de'" @click="switchLang('de'); open = false" class="block w-full px-4 py-2 text-left hover:underline" x-text="texts?.[lang]?.lang_button_de"></button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
