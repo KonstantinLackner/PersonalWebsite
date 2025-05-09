@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html"],
+  content: ["./index.html","./hausdurchsuchung.html"],
   theme: {
     colors: {
       'mainBlue': '#003399',
@@ -40,6 +40,12 @@ export default {
       },
       rotate: {
         '48': '48deg'
+      },
+      spacing: {
+        'header-spacer' : '8rem',
+        'header-spacer-mobile' : '7rem',
+        'footer-spacer' : '8rem',
+        'footer-spacer-mobile' : '7rem',
       }
     },
   },

@@ -11,7 +11,7 @@
 
 <body class="bg-white dark:bg-darkBlue text-center">
 
-<header class="flex sm:hidden justify-between items-center bg-gradient-to-r from-eyeGreen to-eyeBlue fixed top-0 left-0 w-full h-24 z-50 p-4">
+<header class="flex sm:hidden justify-between items-center bg-gradient-to-r from-eyeGreen to-eyeBlue fixed top-0 left-0 w-full h-24 z-50 pt-4 px-4">
     <img src="./img/BigSock.png" alt="logo showing a mountain on top of a black line"
          class="block md:hidden w-auto h-full">
 
@@ -53,7 +53,8 @@
         </div>
     </div>
 </header>
-<section aria-label="Begrüßungstext" class="pt-24 sm:pt-0 h-screen">
+<section aria-label="Spacer" class="flex sm:hidden h-header-spacer-mobile bg-gradient-to-r from-eyeGreen to-eyeBlue"></section>
+<section aria-label="Begrüßungstext" class="sm:pt-0 h-screen">
     <div class="mx-auto bg-gradient-to-r from-eyeGreen to-eyeBlue dark:bg-darkBlue dark:bg-none lg:pt-8 pt-0 sm:pb-0 h-full">
         <div class="px-8 sm:px-16 flex flex-col sm:flex-row sm:items-stretch sm:space-x-6 h-full">
 
@@ -120,11 +121,12 @@
                 and digital technologies. Especially interactions with AI (I passionately scorn this term) are what
                 frequently make me frown.</p>
 
-            <div class="mx-auto pt-10 text-left  grid grid-cols-2">
-                <div class="pr-8">
+            <div class="sm:flex sm:justify-between mx-auto pt-10 text-left">
+                <div class="w-full sm:w-1/2">
                     <h3 class="text-eyeGreen dark:text-white text-2xl mb-6">Academic CV</h3>
 
-                    <div class="border border-eyeGreen max-w-2xl divide-y divide-white">
+                    <!--Table-->
+                    <div class="border border-eyeGreen max-w-2xl divide-y divide-white m-4">
                         <!-- Row 1 -->
                         <div class="grid grid-cols-6">
                             <div class="bg-eyeGreen text-white text-xs lg:text-base font-semibold px-4 py-2">2021</div>
@@ -211,9 +213,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="pl-8">
+                <div class="w-full sm:w-1/2">
                     <h3 class="text-eyeGreen dark:text-white text-2xl mb-6">Academic Services</h3>
-                    <ul class="list-disc pl-5 text-left text-black dark:text-white">
+                    <ul class="list-disc pl-5 text-left text-black dark:text-white p-4">
                         <li>Full Paper AC 1 and 2 for <a
                                 href="https://muc2025.mensch-und-computer.de/de/"
                                 target="_blank"
@@ -646,7 +648,7 @@
     </section>
 </main>
 
-<footer class=" bg-gradient-to-r from-mainBlue to-mediumBlue dark:bg-none w-full h-40 p-4">
+<footer class="bg-gradient-to-r from-eyeGreen to-eyeBlue dark:bg-none w-full h-40 p-4">
 </footer>
 </body>
 
