@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html","./hausdurchsuchung.html"],
+  content: ["./index.html","./hausdurchsuchung.html", "PlanSeeStadt.html"],
   theme: {
     colors: {
       'mainBlue': '#003399',
@@ -46,6 +46,9 @@ export default {
         'header-spacer-mobile' : '7rem',
         'footer-spacer' : '8rem',
         'footer-spacer-mobile' : '7rem',
+      },
+      fontSize: {
+        '5xl': '5rem',
       }
     },
   },
