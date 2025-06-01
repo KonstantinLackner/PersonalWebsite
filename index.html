@@ -77,9 +77,11 @@
     </div>
 </section>
 
-<nav aria-label="Jump Links für schnellere Navigation" class="hidden sm:block px-4 pt-16 sm:px-6 pb-16">
-    <div class="max-w-7xl mx-auto">
+<section aria-label="Spacer" class="flex h-small-header-spacer-mobile sm:h-small-header-spacer"></section>
 
+<nav aria-label="Jump Links für schnellere Navigation"
+     class="sticky top-0 z-10 bg-white hidden sm:block pt-2 px-4 sm:px-6">
+    <div class="max-w-7xl mx-auto">
         <div class="flex flex-col sm:flex-row sm:justify-between justify-start sm:space-x-6 mb-6">
             <a aria-label="Jump Link zu Projektinformationen"
                href="#research"
@@ -94,9 +96,9 @@
                class="text-base lg:text-lg font-normal text-eGToEBStep2 hover:text-darkBlue dark:text-darkModeLightBlue dark:hover:text-white text-left transition-colors duration-300">↓
                 Reflections on Academia</a>
             <a aria-label="Jump Link zu News und Publikationen"
-               href="#Contact"
+               href="#contact"
                class="text-base lg:text-lg font-normal text-eyeBlue hover:text-darkBlue dark:text-darkModeLightBlue dark:hover:text-white text-left transition-colors duration-300">↓
-                Miscellaneous</a>
+                Contact</a>
         </div>
         <div class="h-[1px] w-full bg-gradient-to-r from-eyeGreen to-eyeBlue"></div>
     </div>
@@ -104,8 +106,8 @@
 
 <main>
     <section id="research" aria-label="Research"
-             class="px-4 sm:px-6 pb-20 sm:pb-32 scroll-mt-mobile-header sm:scroll-mt-desktop-header">
-        <div class="pt-10 md:pt-0 max-w-5xl mx-auto text-left">
+             class="px-4 sm:px-6 pb-20 scroll-mt-mobile-header sm:scroll-mt-desktop-header pt-16">
+        <div class="pt-10 md:pt-0 max-w-4xl mx-auto text-left">
             <h2 class="text-eyeGreen dark:text-white text-4xl mb-6 text-left">Research</h2>
             <p class="p-1 w-full">I am currently pursuing my PhD at the
                 <a href="https://www.uni-kassel.de/eecs/en/pit/team/konstantin-lackner"
@@ -279,8 +281,8 @@
     </section>
 
     <section id="gameDesign" aria-label="Game Design projects"
-             class="px-4 sm:px-6 pb-20 sm:pb-32 scroll-mt-mobile-header sm:scroll-mt-desktop-header">
-        <div class="max-w-5xl mx-auto text-left">
+             class="px-4 sm:px-6 pb-20 scroll-mt-mobile-header sm:scroll-mt-desktop-header">
+        <div class="max-w-4xl mx-auto text-left">
             <h2 class="text-eGToEBStep1 dark:text-white text-4xl mb-6 text-left">Game Design</h2>
             <p>Some of the games presented here were made in the course of game jams, some are university projects, some
                 are contract work. Many were made in cooperation with others, which I make sure to mention here.</p>
@@ -289,10 +291,11 @@
                 <div id="slider" class="flex transition-transform duration-500 ease-in-out">
                     <!-- Slide 1 -->
                     <div class="w-full px-4 flex-shrink-0 flex flex-col items-center text-left">
-                        <div class="w-full max-w-6xl px-4 sm:px-8">
+                        <div class="flex flex-col items-center max-w-6xl px-4 sm:px-8 w-full sm:w-3/4">
                             <h3 class="text-eGToEBStep1 text-xl">ZECK ATTACK</h3>
                             <p>
-                                Contract work for Pfizer to promote their tick vaccination →
+                                A simple browser jump&run game, created as contract work for Pfizer to promote their
+                                tick vaccination →
                                 <a href="https://pfizeraustria.itch.io/zeck-attack"
                                    target="_blank"
                                    rel="noopener noreferrer"
@@ -308,7 +311,7 @@
 
                     <!-- Slide 2 -->
                     <div class="w-full px-4 flex-shrink-0 flex flex-col items-center text-left">
-                        <div class="w-full max-w-6xl px-4 sm:px-8">
+                        <div class="flex flex-col items-center w-full sm:w-3/4 max-w-6xl px-4 sm:px-8">
                             <h3 class="text-eGToEBStep1 text-xl">Hausdurchsuchung</h3>
                             <p>
                                 A political game created in the course of a university project, dealing with the house
@@ -319,10 +322,11 @@
                                    class="text-eGToEBStep1 hover:underline">click here to read more</a>
                             </p>
                             <a href="hausdurchsuchung.html"
-                               rel="noopener noreferrer">
+                               rel="noopener noreferrer"
+                               class="flex flex-col items-center">
                                 <img src="/img/HausDurchsuchungBanner.jpg"
                                      alt="Slide 1"
-                                     class="object-cover mt-4 select-none pointer-events-none"
+                                     class="object-cover mt-4 select-none pointer-events-none w-full"
                                      draggable="false">
                             </a>
                         </div>
@@ -330,7 +334,7 @@
 
                     <!-- Slide 3 -->
                     <div class="w-full px-4 flex-shrink-0 flex flex-col items-center text-left">
-                        <div class="w-full max-w-6xl px-4 sm:px-8">
+                        <div class="flex flex-col items-center w-full sm:w-3/4 max-w-6xl px-4 sm:px-8">
                             <h3 class="text-eGToEBStep1 text-xl">Plan(See)Stadt</h3>
                             <p>
                                 The aim of this card game was to familiarise players with urban planning. This goes hand
@@ -343,10 +347,11 @@
                                    class="text-eGToEBStep1 hover:underline">click here to read more</a>
                             </p>
                             <a href="PlanSeeStadt.html"
-                               rel="noopener noreferrer">
+                               rel="noopener noreferrer"
+                               class="flex flex-col items-center">
                                 <img src="/img/PlanStadtEdited.jpg"
                                      alt="Slide 1"
-                                     class="object-cover mt-4 select-none pointer-events-none"
+                                     class="object-cover mt-4 select-none pointer-events-none w-full"
                                      draggable="false">
                             </a>
                         </div>
@@ -354,24 +359,23 @@
 
                     <!-- Slide 4 -->
                     <div class="w-full px-4 flex-shrink-0 flex flex-col items-center text-left">
-                        <div class="w-full max-w-6xl px-4 sm:px-8">
+                        <div class="flex flex-col items-center w-full sm:w-3/4 max-w-6xl px-4 sm:px-8">
                             <h3 class="text-eGToEBStep1 text-xl">WobotkaVR</h3>
                             <p>
-                                A two-player asymmetrical PVP game. One player has the role of “Wobotka”, a sort of
-                                watchman sitting on a tower, watching over his house, controlling a searchlight. The
-                                other player has the role of the intruder, whose mission it is to find one of the four
-                                doors and leave a package in front of it. This is yet another political game, some might
-                                say about the same political party as Hausdurchsuchung.</p>
+                                A two-player asymmetrical VR PVP game, one player drops packages on the other player's
+                                porch. Yet another political game, some might say about the same political party as
+                                Hausdurchsuchung.</p>
                             <p>→
                                 <a href="WobotkaVR.html"
                                    rel="noopener noreferrer"
                                    class="text-eGToEBStep1 hover:underline">click here to read more</a>
                             </p>
                             <a href="WobotkaVR.html"
-                               rel="noopener noreferrer">
+                               rel="noopener noreferrer"
+                               class="flex flex-col items-center">
                                 <img src="/img/WobotkaVR.PNG"
                                      alt="Slide 1"
-                                     class="object-cover mt-4 select-none pointer-events-none"
+                                     class="object-cover mt-4 select-none pointer-events-none w-full"
                                      draggable="false">
                             </a>
                         </div>
@@ -393,318 +397,79 @@
     </section>
 
     <section id="reflectionsOnAcademia" aria-label="Reflections on academia"
-             class="pb-20 sm:pb-32 scroll-mt-mobile-header sm:scroll-mt-desktop-header text-black dark:text-white">
-        <div class="max-w-5xl mx-auto px-2 sm:px-0">
-            <h2 class="text-2xl font-bold mb-6 text-left">Konsortium</h2>
+             class="px-4 sm:px-6 pb-20 scroll-mt-mobile-header sm:scroll-mt-desktop-header">
+        <div class="flex flex-col max-w-4xl mx-auto text-left items-start">
+            <h2 class="text-eGToEBStep2 dark:text-white text-4xl mb-6 text-left">Reflections on Academia</h2>
+            <p>
+                Throughout my PhD journey, I irregularly draw comics on my experience in Academia.
+                These comics don’t reflect my current interests, ideas, opinion or even looks (e.g. I do wear glasses
+                now). They are mere snapshots of what was going on in my head while at the stage of my PhD I was at when
+                drawing them. Also, most likely, non of my coworkers or public figures that I depict in the comics are
+                socks.
+            </p>
+            <p>
+                They are sorted most recent to I barely remember what I was trying to say.
+            </p>
+            <a href="SockPuppetScience.html" class="w-full flex flex-col justify-center items-center">
+                <img src="/img/sockComicTeaser.png" alt="Teaser image for the sock comics"
+                     class="h-80 w-80 mt-12 mx-12 border-4 border-black">
+                <p class="text-eGToEBStep2 hover:underline">
+                    Click here to see the comics
+                </p>
+            </a>
+        </div>
+    </section>
 
-            <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-6">
-                <div class="text-left sm:w-1/2">
-                    <p class="text-left pb-4">Das Projekt <span class="font-bold">„Demokratie-X“</span> wird von einem
-                        <span
-                                class="font-bold">interdisziplinären Konsortium</span> bestehend aus vier
-                        Universitäten und zwei
-                        Praxispartnern durchgeführt. Ziel ist die Entwicklung einer privatheitsschonenden, fairen und
-                        gemeinwohlorientierten Nachrichtenplattform, die europäische Werte und demokratische Prinzipien
-                        in
-                        den
-                        Mittelpunkt
-                        stellt.</p>
-                    <p class="text-left pb-4">
-                        Die Ludwig-Maximilians-Universität München (LMU) koordiniert das Projekt und untersucht die
-                        wirtschaftliche
-                        Tragfähigkeit der Plattform, einschließlich der Entwicklung eines nachhaltigen Geschäftsmodells
-                        und
-                        einer
-                        passenden Governance. Die Universität Kassel trägt mit zwei Instituten bei: eines analysiert
-                        Strukturen und
-                        Praktiken für demokratische und faire Plattformgestaltung, während das andere sich auf die
-                        partizipative, faire und nachhaltige Gestaltung der im Projekt entstehenden Technologien
-                        fokussiert.
-                        Die Technische Universität München (TUM) übernimmt die Entwicklung
-                        und
-                        Gestaltung des Backends, und die Universität Passau erforscht die juristische Absicherung der
-                        Plattform.
+    <section id="contact" aria-label="Contact"
+             class="px-4 sm:px-6 pb-20 scroll-mt-mobile-header sm:scroll-mt-desktop-header">
+        <div class="flex flex-col max-w-4xl mx-auto text-left items-start w-full">
+            <h2 class="text-eyeBlue dark:text-white text-4xl mb-6 text-left">Contact</h2>
+            <div class="flex flex-col sm:flex-row items-center justify-start w-full">
+                <img src="/img/Konstantin_closer.png" alt="Konstantin Lackner's face" class="w-64">
+                <div class="sm:pl-3 pt-8 sm:pt-0">
+                    <p>
+                        Reach out to me if you'd like to discuss my research projects – past or future – or want to
+                        collaborate on something new. I'm also available to supervise student projects, Bachelor's or
+                        Master's theses at the University of Kassel.
+                        <br>
+                        If you're looking for someone to develop a video game or a website such as this one, on a
+                        contract basis, feel free to get in touch – I'd be happy to see if I'm available within your
+                        timeframe.
                     </p>
-                    <p class="text-left pb-4">
-                        Zwei Praxispartner bringen ihre Expertise in die Entwicklung ein: SWISS TXT, in Kooperation mit
-                        der
-                        European
-                        Broadcasting Union, und die Vereinigung der Bayerischen Wirtschaft (vbw). Diese Zusammenarbeit
-                        ermöglicht ein
-                        Design-Science-Ansatz mit direkter Evaluierung des Plattformkonzepts durch die Wirtschaft.
-                    </p>
-                    <p class="text-left pb-4">
-                        Das Projekt wird durch das Bundesministerium für Bildung und Forschung gefördert und ist
-                        integriert
-                        in die
-                        <a aria-label="Link zur externen Website der Plattform Privatheit"
-                           href="https://plattform-privatheit.de/p-prv/index.php"
-                           class="font-semibold text-mediumBlue dark:text-darkModeLightBlue hover:text-black dark:hover:text-white transition-colors duration-300">Plattform
-                            Privatheit</a>.</p>
+                    <br>
+                    <p>Email: <a class="text-eyeBlue hover:underline"
+                                 href="mailto:konstantin.lackner@uni-kassel.de">konstantin.lackner@uni-kassel.de</a></p>
+                    <p>LinkedIn: <a class="text-eyeBlue hover:underline"
+                                    href="https://www.linkedin.com/in/konstantin-lackner-817122221/"
+                                    target="_blank"
+                                    rel="noopener noreferrer">Konstantin Lackner</a></p>
+                    <p>GitHub: <a class="text-eyeBlue hover:underline"
+                                  href="https://github.com/KonstantinLackner"
+                                  target="_blank"
+                                  rel="noopener noreferrer">KonstantinLackner</a></p>
+                    <p>itch.io: <a class="text-eyeBlue hover:underline"
+                                   href="https://konstantinlackner.itch.io/"
+                                   target="_blank"
+                                   rel="noopener noreferrer">konstantinlackner</a></p>
                 </div>
-                <figure role="group" class="sm:w-1/2 h-auto mb-4 sm:mb-0">
-                    <img class="w-full"
-                         src="./img/consortium.png"
-                         alt="Bild das alle Logos des Konsortiums zeigt">
-                    <figcaption>
-                        <a href="src/Konsortium-Bildbeschreibung.html" class=" font-thin text-greyBlue">Konsortium
-                            textuelle
-                            Bildbeschreibung</a>
-                    </figcaption>
-                </figure>
             </div>
-        </div>
-
-        <!-- Collapsabl info -->
-        <div class="max-w-5xl mx-auto py-1">
-            <div x-data="{ open: false }">
-                <button aria-label="Klappt die Liste der LMU Teammitglieder auf oder zu"
-                        @click="open = ! open"
-                        :class="open ? 'bg-mediumBlue text-white transition-colors duration-300' : 'bg-lightBlue dark:bg-mediumDarkBlue text-mediumBlue dark:text-white transition-colors duration-300'"
-                        class="max-w-5xl w-full h-full py-4 px-4 bg-lightBlue font-semibold text-left hover:bg-mediumBlue transition-colors duration-300 text-mediumBlue hover:text-white flex items-center justify-between">
-                    <span>Wirtschaftliche Tragfähigkeit (LMU)</span>
-                    <!-- Down Arrow in the right corner -->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                         class="w-4 h-4 transition-transform duration-300" :class="open ? 'rotate-180' : ''">
-                        <path stroke-linecap="round" stroke-width="3" stroke-linejoin="round"
-                              d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
-                    </svg>
-                </button>
-                <ul x-show="open" class="p-4">
-                    <li aria-label="Hinweis zur Projektkoordination" class="w-fit px-2 sm:px-0">
-                        <div class="grid grid-cols-10 border border-mediumBlue">
-                            <div class="font-semibold text-white  px-4 py-4 bg-mediumBlue">!</div>
-                            <div class="text-gray-900 col-span-9 text-left px-4 py-4">Projektkoordination
-                            </div>
-                        </div>
-                    </li>
-                    <li class="max-w-5xl text-left pt-4">
-                        <a aria-label="Link zu Dr. Thomas Hess' Teammitgliederseite auf der externen Website der LMU"
-                           href="https://www.som.lmu.de/dmm/de/team/kontaktseite/thomas-hess-f97e84e9.html"
-                           class="font-semibold text-mediumBlue hover:text-black dark:hover:text-white transition-colors duration-300">Prof.
-                            Dr.
-                            Thomas
-                            Hess</a>
-                    </li>
-                    <li class="max-w-5xl text-left pt-4">
-                        <a aria-label="Link zu Eva Hoffmeisters Teammitgliederseite auf der externen Website der LMU"
-                           href="https://www.som.lmu.de/dmm/de/team/kontaktseite/eva-hoffmeister-5ac10b61.html"
-                           class="font-semibold text-mediumBlue hover:text-black dark:hover:text-white transition-colors duration-300">Eva
-                            Hoffmeister</a>
-                    </li>
-                    <li class="max-w-5xl text-left pt-4">
-                        <a aria-label="Link zu Pascal Altenkamps Teammitgliederseite auf der externen Website der LMU"
-                           href="
-        https://www.som.lmu.de/dmm/de/team/kontaktseite/pascal-altenkamp-bc15e131.html"
-                           class="font-semibold text-mediumBlue hover:text-black dark:hover:text-white transition-colors duration-300">Pascal
-                            Altenkamp</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="max-w-5xl mx-auto py-1">
-            <div x-data="{ open: false }">
-                <button aria-label="Klappt die Liste der Uni Kassel Soziologie Teammitglieder auf oder zu"
-                        @click="open = ! open"
-                        :class="open ? 'bg-mediumBlue text-white transition-colors duration-300' : 'bg-lightBlue dark:bg-mediumDarkBlue text-mediumBlue dark:text-white transition-colors duration-300'"
-                        class="max-w-5xl w-full h-full py-4 px-4 bg-lightBlue font-semibold text-left hover:bg-mediumBlue transition-colors duration-300 text-mediumBlue hover:text-white flex items-center justify-between">
-                    <span>Strukturen und Praktiken (Universität Kassel)</span>
-                    <!-- Down Arrow in the right corner -->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                         class="w-4 h-4 transition-transform duration-300" :class="open ? 'rotate-180' : ''">
-                        <path stroke-linecap="round" stroke-width="3" stroke-linejoin="round"
-                              d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
-                    </svg>
-                </button>
-                <ul x-show="open" class="p-4">
-                    <li class="max-w-5xl text-left">
-                        <a aria-label="Link zu Dr. Jörn Lamlas Teammitgliederseite auf der externen Website der Uni Kassel"
-                           href="https://www.uni-kassel.de/fb05/fachgruppen-und-institute/soziologie/fachgebiete/soziologische-theorie/team/prof-dr-joern-lamla"
-                           class="font-semibold text-mediumBlue hover:text-black dark:hover:text-white transition-colors duration-300">Prof.
-                            Dr. Jörn
-                            Lamla</a>
-                    </li>
-                    <li class="max-w-5xl text-left pt-4">
-                        <a aria-label="Link zu Markus Uhlmanns Teammitgliederseite auf der externen Website der Uni Kassel"
-                           href="https://www.uni-kassel.de/fb05/fachgruppen-und-institute/soziologie/fachgebiete/soziologische-theorie/team/dr-markus-uhlmann"
-                           class="font-semibold text-mediumBlue hover:text-black dark:hover:text-white transition-colors duration-300">Dr.
-                            Markus Uhlmann</a>
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="max-w-5xl mx-auto py-1">
-            <div x-data="{ open: false }">
-                <button aria-label="Klappt die Liste der Uni Kassel Partizipative IT-Gestaltung Teammitglieder auf oder zu"
-                        @click="open = ! open"
-                        :class="open ? 'bg-mediumBlue text-white transition-colors duration-300' : 'bg-lightBlue dark:bg-mediumDarkBlue text-mediumBlue dark:text-white transition-colors duration-300'"
-                        class="max-w-5xl w-full h-full py-4 px-4 bg-lightBlue font-semibold text-left hover:bg-mediumBlue transition-colors duration-300 text-mediumBlue hover:text-white flex items-center justify-between">
-                    <span>Partizipative IT-Gestaltung (Universität Kassel)</span>
-                    <!-- Down Arrow in the right corner -->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                         class="w-4 h-4 transition-transform duration-300" :class="open ? 'rotate-180' : ''">
-                        <path stroke-linecap="round" stroke-width="3" stroke-linejoin="round"
-                              d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
-                    </svg>
-                </button>
-                <ul x-show="open" class="p-4">
-                    <li class="max-w-5xl text-left">
-                        <a aria-label="Link zu Dr. Claude Draudes Teammitgliederseite auf der externen Website der Uni Kassel"
-                           href="https://www.uni-kassel.de/eecs/pit/team/claude-draude"
-                           class="font-semibold text-mediumBlue hover:text-black dark:hover:text-white transition-colors duration-300">Prof.
-                            Dr. Claude Draude</a>
-                    </li>
-                    <li class="max-w-5xl text-left pt-4">
-                        <a aria-label="Link zu Konstantin Lackners Teammitgliederseite auf der externen Website der Uni Kassel"
-                           href="https://www.uni-kassel.de/eecs/pit/team/konstantin-lackner"
-                           class="font-semibold text-mediumBlue hover:text-black dark:hover:text-white transition-colors duration-300">Konstantin
-                            Lackner</a>
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="max-w-5xl mx-auto py-1">
-            <div x-data="{ open: false }">
-                <button aria-label="Klappt die Liste der TUM Teammitglieder auf oder zu"
-                        @click="open = ! open"
-                        :class="open ? 'bg-mediumBlue text-white transition-colors duration-300' : 'bg-lightBlue dark:bg-mediumDarkBlue text-mediumBlue dark:text-white transition-colors duration-300'"
-                        class="max-w-5xl w-full h-full py-4 px-4 bg-lightBlue font-semibold text-left hover:bg-mediumBlue transition-colors duration-300 text-mediumBlue hover:text-white flex items-center justify-between">
-                    <span>Technische Umsetzung (TUM)</span>
-                    <!-- Down Arrow in the right corner -->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                         class="w-4 h-4 transition-transform duration-300" :class="open ? 'rotate-180' : ''">
-                        <path stroke-linecap="round" stroke-width="3" stroke-linejoin="round"
-                              d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
-                    </svg>
-                </button>
-                <ul x-show="open" class="p-4">
-                    <li class="max-w-5xl text-left">
-                        <a aria-label="Link zu Dr. Florian Matthes Teammitgliederseite auf der externen Website der TUM"
-                           href="https://wwwmatthes.in.tum.de/pages/88bkmvw6y7gx/Prof.-Dr.-Florian-Matthes"
-                           class="font-semibold text-mediumBlue hover:text-black dark:hover:text-white transition-colors duration-300">Prof.
-                            Dr. Florian Matthes</a>
-                    </li>
-                    <li class="max-w-5xl text-left pt-4">
-                        <a aria-label="Link zu Jonas Gebeles Teammitgliederseite auf der externen Website der TUM"
-                           href="https://wwwmatthes.in.tum.de/pages/vlghx1fafb7n/Jonas-Gebele"
-                           class="font-semibold text-mediumBlue hover:text-black dark:hover:text-white transition-colors duration-300">Jonas
-                            Gebele</a>
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="max-w-5xl mx-auto py-1">
-            <div x-data="{ open: false }">
-                <button aria-label="Klappt die Liste der Uni Passau Teammitglieder auf oder zu"
-                        @click="open = ! open"
-                        :class="open ? 'bg-mediumBlue text-white transition-colors duration-300' : 'bg-lightBlue dark:bg-mediumDarkBlue text-mediumBlue dark:text-white transition-colors duration-300'"
-                        class="max-w-5xl w-full h-full py-4 px-4 bg-lightBlue font-semibold text-left hover:bg-mediumBlue transition-colors duration-300 text-mediumBlue hover:text-white flex items-center justify-between">
-                    <span>Rechtlicher Rahmen (Universität Passau)</span>
-                    <!-- Down Arrow in the right corner -->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                         class="w-4 h-4 transition-transform duration-300" :class="open ? 'rotate-180' : ''">
-                        <path stroke-linecap="round" stroke-width="3" stroke-linejoin="round"
-                              d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
-                    </svg>
-                </button>
-                <ul x-show="open" class="p-4">
-                    <li class="max-w-5xl text-left">
-                        <a aria-label="Link zu Dr. Kai von Lewinskis Teammitgliederseite auf der externen Website der Uni Passau"
-                           href="https://www.jura.uni-passau.de/lewinski/lehrstuhlinhaber"
-                           class="font-semibold text-mediumBlue hover:text-black dark:hover:text-white transition-colors duration-300">Prof.
-                            Dr. Kai von Lewinski</a>
-                    </li>
-                    <li class="max-w-5xl text-left pt-4">
-                        <a aria-label="Link zu Benedikt Levens Teammitgliederseite auf der externen Website der Uni Passau"
-                           href="https://www.jura.uni-passau.de/lewinski/mitarbeiterinnen-und-mitarbeiter/wissenschaftliche-mitarbeiter/benedikt-leven-1"
-                           class="font-semibold text-mediumBlue hover:text-black dark:hover:text-white transition-colors duration-300">Benedikt
-                            Leven</a>
-                    </li>
-                    <li class="max-w-5xl text-left pt-4">
-                        <a aria-label="Link zu Lukas Köllnbergers Teammitgliederseite auf der externen Website der Uni Passau"
-                           href="https://www.jura.uni-passau.de/lewinski/mitarbeiterinnen-und-mitarbeiter/wissenschaftliche-mitarbeiter/lukas-koellnberger-1"
-                           class="font-semibold text-mediumBlue hover:text-black dark:hover:text-white transition-colors duration-300">Lukas
-                            Köllnberger</a>
-                    </li>
-
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="max-w-5xl mx-auto py-1">
-            <div x-data="{ open: false }">
-                <button aria-label="Klappt die Liste der Praxispartner*innen auf oder zu"
-                        @click="open = ! open"
-                        :class="open ? 'bg-mediumBlue text-white transition-colors duration-300' : 'bg-lightBlue dark:bg-mediumDarkBlue text-mediumBlue dark:text-white transition-colors duration-300'"
-                        class="max-w-5xl w-full h-full py-4 px-4 bg-lightBlue font-semibold text-left hover:bg-mediumBlue transition-colors duration-300 text-mediumBlue hover:text-white flex items-center justify-between">
-                    <span>Praxispartner*innen</span>
-                    <!-- Down Arrow in the right corner -->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                         class="w-4 h-4 transition-transform duration-300" :class="open ? 'rotate-180' : ''">
-                        <path stroke-linecap="round" stroke-width="3" stroke-linejoin="round"
-                              d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
-                    </svg>
-                </button>
-                <ul x-show="open" class="p-4">
-                    <li class="max-w-5xl text-left">
-                        SWISS TXT / EBU
-                    </li>
-                    <li class="max-w-5xl text-left">
-                        vbw - Vereinigung der Bayerischen Wirtschaft
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="max-w-5xl mx-auto py-1">
-            <div x-data="{ open: false }">
-                <button aria-label="Klappt die Liste der Förderer*innen auf oder zu"
-                        @click="open = ! open"
-                        :class="open ? 'bg-mediumBlue text-white transition-colors duration-300' : 'bg-lightBlue dark:bg-mediumDarkBlue text-mediumBlue dark:text-white transition-colors duration-300'"
-                        class="max-w-5xl w-full h-full py-4 px-4 bg-lightBlue font-semibold text-left hover:bg-mediumBlue transition-colors duration-300 text-mediumBlue hover:text-white flex items-center justify-between">
-                    <span>Förderer*innen</span>
-                    <!-- Down Arrow in the right corner -->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                         class="w-4 h-4 transition-transform duration-300" :class="open ? 'rotate-180' : ''">
-                        <path stroke-linecap="round" stroke-width="3" stroke-linejoin="round"
-                              d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
-                    </svg>
-                </button>
-                <ul x-show="open" class="p-4">
-                    <li class="max-w-5xl text-left">
-                        Bundesministerium für Bildung und Forschung
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="Contact" aria-label="Contact"
-             class="pb-20 sm:pb-32 scroll-mt-mobile-header sm:scroll-mt-desktop-header text-black dark:text-white">
-        <div class="max-w-5xl mx-auto px-2 sm:px-0">
-            <h2 class="text-2xl font-bold mb-6 text-left">News & Publikationen</h2>
-            <p class="text-left">Hier gibt es bald mehr.</p>
-        </div>
-    </section>
-
-    <section id="placeholder" aria-label="Kontakt"
-             class="pb-20 sm:pb-32 scroll-mt-mobile-header sm:scroll-mt-desktop-header text-black dark:text-white">
-        <div class="max-w-5xl mx-auto px-2 sm:px-0">
-            <h2 class="text-2xl font-bold mb-6 text-left">Kontakt</h2>
-            <p class="text-left">Hier gibt es bald mehr.</p>
         </div>
     </section>
 </main>
 
-<footer class="bg-gradient-to-r from-eyeGreen to-eyeBlue dark:bg-none w-full h-40 p-4">
+<footer class="bg-gradient-to-r from-eyeGreen to-eyeBlue dark:bg-none w-full h-40 p-4 flex items-center justify-center">
+    <div class="flex flex-col justify-between items-start text-white text-left w-96">
+        <p>This website was created with <a href="https://tailwindcss.com/" class="hover:underline">tailwindcss</a> and
+            <a
+                    href="https://alpinejs.dev/" class="hover:underline">Alpine.js</a>
+        and is hosted on <a href="https://pages.github.com/" class="hover:underline">GitHub Pages</a></p>
+        <p>Email: <a class="text-lightBlue hover:underline"
+                     href="mailto:konstantin.lackner@uni-kassel.de">konstantin.lackner@uni-kassel.de</a></p>
+        <p>LinkedIn: <a class="text-lightBlue hover:underline"
+                        href="https://www.linkedin.com/in/konstantin-lackner-817122221/"
+                        target="_blank"
+                        rel="noopener noreferrer">Konstantin Lackner</a></p>
+    </div>
 </footer>
 </body>
 

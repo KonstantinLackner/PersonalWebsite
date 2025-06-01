@@ -25,6 +25,7 @@ export default {
       'veryLightBlue': '#e6eef5',
       'lightBrown': '#D2BBA1',
       'orangeBrown': '#9F7141',
+      'transp': 'rgba(255, 255, 255, 0)',
     },
     extend: {
       fontFamily: {
@@ -36,7 +37,7 @@ export default {
       },
       scrollMargin: {
         'mobile-header': '130px',
-        'desktop-header': '10px'
+        'desktop-header': '80px'
       },
       rotate: {
         '48': '48deg'
@@ -44,6 +45,8 @@ export default {
       spacing: {
         'header-spacer' : '8rem',
         'header-spacer-mobile' : '7rem',
+        'small-header-spacer' : '2rem',
+        'small-header-spacer-mobile' : '1rem',
         'footer-spacer' : '8rem',
         'footer-spacer-mobile' : '7rem',
       },
