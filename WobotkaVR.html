@@ -62,66 +62,79 @@
     <section aria-label="Spacer" class="flex h-header-spacer-mobile sm:h-header-spacer"></section>
     <section id="research" aria-label="Research"
              class="px-4 scroll-mt-mobile-header sm:scroll-mt-desktop-header">
-        <div class="max-w-7xl mx-auto text-left">
-            <img src="/img/HausDurchsuchungBanner.jpg"
+        <div class="max-w-5xl mx-auto text-left">
+            <img src="/img/WobotkaVR.PNG"
                  alt="Hausdurchsuchung banner"
                  class="object-cover mt-4 select-none pointer-events-none p-8"
                  draggable="false">
+
+            <h2 class="text-eyeGreen dark:text-white text-4xl sm:text-5xl mb-6 text-center">Wobotka-VR</h2>
             <div class="w-full text-center p-8">
                 <p class="font-light text-eyeGreen">–A corporation with Christoff Kügler–</p>
             </div>
-            <p class="pt-2">
-                A political game created in the course of a university project, dealing with the house
-                search at the Austrian Minister of Finance's home. The game is a checkerboard-based, turn-based strategy
-                game in which you try to collect all media containing incriminating evidence in a stroller. Your
-                opponent (the WKStA) is doing the same (except for the stroller). You also have smoke grenades at your
-                disposal to get out of especially precarious situations.
-            </p>
-            <div class="pt-8 sm:flex items-start sm:justify-between">
-                <div class="w-full sm:w-1/2">
-                    <h3 class="text-eyeGreen dark:text-white text-4xl mb-6 text-left">Reception</h3>
-                    <p>
-                        The game reached about 2.000 installations in the Google Playstore and was reported on in
-                        Austrian newspapers such as
-                        <a href="https://www.derstandard.at/"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="text-eyeGreen hover:underline">der Standard</a>
-                        or
-                        <a href="https://zackzack.at/"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="text-eyeGreen hover:underline">ZackZack</a>
-                        . This even resulted in a party member threatening to sue us – a threat unfortunately never
-                        realised.
-                    </p>
-                    <h3 class="text-eyeGreen dark:text-white text-4xl mb-6 text-left pt-8">Disclaimer</h3>
-                    <p>Apps developed as part of the course at TU Wien exclusively reflect the opinion of the
-                        contributing students and do not reflect the opinion of TU Wien. Furthermore, TU Wien is not
-                        liable for any copyright infringements, only the contributing students.</p>
+            <p class="pt-2 text-lightGrey italic">Apps and games developed as part of a course at TU Wien exclusively
+                reflect the opinion of the contributing students and do not reflect the opinion of TU Wien. Furthermore,
+                TU Wien is not liable for any copyright infringements.</p>
+            <div class="pt-8">
+                <h3 class="text-eGToEBStep1 dark:text-white text-4xl mb-6 text-left">Concept</h3>
+                <div class="flex flex-col sm:flex-row w-full">
+                    <div class="w-full sm:w-1/2 flex justify-center">
+                        <p>
+                            A two-player asymmetrical PVP game. One player has the role of ‘Wobotka’, a sort of watchman
+                            sitting
+                            on a tower, watching over his house and more specifically its four doors, controlling a
+                            searchlight.
+                            The other player has the role of the intruder, whose mission it is to find one of the four
+                            doors and
+                            leave a package in front of it. If the intruder manages to find a door and leave a package
+                            without
+                            being caught in the vicinity of the package (as in revealed by Wobotka’s searchlight), they
+                            score a
+                            point. Likewise, ‘Wobotka’ scores a point whenever they reveal an intruder.
+                        </p>
+                    </div>
+                    <div class="w-full sm:w-1/2 flex justify-center">
+                        <img src="/img/WobotkaVR3.PNG"
+                             alt="Wobotka VR"
+                             class="flex h-auto w-auto sm:w-80 p-5"
+                             draggable="false">
+                    </div>
                 </div>
-                <div class="w-full sm:w-1/2">
-                    <img src="/img/HausDurchsuchungStandard.png"
-                         alt="hausdurchsuchung reporting in Der Standard"
-                         class="mt-4 select-none pointer-events-none p-1 sm:p-8"
-                         draggable="false">
+            </div>
+            <div class="pt-16">
+                <h3 class="text-eGToEBStep2 dark:text-white text-4xl mb-6 text-left">Implementation</h3>
+                <div class="flex flex-col sm:flex-row w-full">
+                    <div class="w-full sm:w-1/2 flex flex-col justify-center">
+                        <p>
+                            The game is made using the Unity Engine and its VR features and is optimised on META Quest 2
+                            as
+                            well as HTC Vive. It uses PUN2 for the multiplayer elements. It includes features such as:
+                        </p>
+                        <ul class="list-disc pl-5">
+                            <li>Hand-controller animation beyond standard buttons using hand models that play certain
+                                animations, depending on the players’ inputs
+                            </li>
+                            <li>Internal emote exchange for communication - making the game more fun, the intruder can
+                                send some emoticons to Wobotka and vice versa to taunt
+                            </li>
+                            <li>Spatial audio - Wobotka can hear where the outside player wanders around in his garden,
+                                as there are footsteps coming from the intruder's location when they move
+                            </li>
+                            <li>Haptics with vibrations</li>
+                            <li>Mini-map of the virtual environment updated for both players</li>
+                        </ul>
+
+                    </div>
+                    <div class="w-full sm:w-1/2 flex justify-center">
+                        <img src="/img/WobotkaVR2.PNG"
+                             alt="Wobotka VR"
+                             class="flex h-auto w-auto p-5"
+                             draggable="false">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="pt-8 pb-8 sm:flex items-start sm:justify-between">
-            <div class="w-full sm:w-1/2">
-                <img src="/img/HausDurchsuchungZackZack.png"
-                     alt="hausdurchsuchung reporting in Der Standard"
-                     class="mt-4 select-none pointer-events-none p-1 sm:p-8"
-                     draggable="false">
-            </div>
-            <div class="w-full sm:w-1/2">
-                <img src="/img/HausDurchsuchungStandardInsta.png"
-                     alt="hausdurchsuchung reporting in Der Standard"
-                     class="mt-4 select-none pointer-events-none px-1 sm:px-8"
-                     draggable="false">
-            </div>
-        </div>
+        <section aria-label="Spacer" class="flex h-header-spacer-mobile sm:h-header-spacer"></section>
     </section>
 </main>
 

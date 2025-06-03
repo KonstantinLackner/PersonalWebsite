@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html","./hausdurchsuchung.html", "PlanSeeStadt.html"],
+  content: ["./index.html","./hausdurchsuchung.html", "./PlanSeeStadt.html", "./WobotkaVR.html", "./SockPuppetScience.html"],
   theme: {
     colors: {
       'mainBlue': '#003399',
