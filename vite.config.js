@@ -1,5 +1,8 @@
 import { defineConfig } from "vite";
 import tailwindcss from "tailwindcss";
+import { glob } from "glob";
+import path from "path";
+
 export default defineConfig({
   base: "./",
   plugins: [],
@@ -11,10 +14,7 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      input: {
-        main: 'index.html',
-        about: 'src/Konsortium-Bildbeschreibung.html'
-      },
+      input: glob.sync(path.resolve(__dirname, "./", "*.html"))
     },
     target: 'esnext'
   },
