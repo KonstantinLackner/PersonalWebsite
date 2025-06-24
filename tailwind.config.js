@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html","./hausdurchsuchung.html", "./PlanSeeStadt.html", "./WobotkaVR.html", "./SockPuppetScience.html"],
+  content: ["./index.html", "./hausdurchsuchung.html", "./PlanSeeStadt.html", "./WobotkaVR.html", "./SockPuppetScience.html"],
   theme: {
     colors: {
       'mainBlue': '#003399',
@@ -12,7 +12,12 @@ export default {
       'black': '#000000',
       'white': '#ffffff',
       'mediumDarkBlue': '#1b3669',
-      'darkModeLightBlue': '#4287f5',
+      'darkModeLightBlue': '#7297f5',
+      'darkerBlue': 'rgb(27, 46, 62)',
+      'sockWhite': '#fff6f6',
+      'comicBg1': '#ffa373',
+      'comicBg2': '#80c6d2',
+      'comicBg3': '#bba1cd',
       'somewhatSalmon': '#e0a896',
       'somewhatTurquoise': '#96e0d3',
       'eyeGreen': '#62c25b',
@@ -43,12 +48,12 @@ export default {
         '48': '48deg'
       },
       spacing: {
-        'header-spacer' : '8rem',
-        'header-spacer-mobile' : '7rem',
-        'small-header-spacer' : '2rem',
-        'small-header-spacer-mobile' : '1rem',
-        'footer-spacer' : '8rem',
-        'footer-spacer-mobile' : '7rem',
+        'header-spacer': '8rem',
+        'header-spacer-mobile': '7rem',
+        'small-header-spacer': '2rem',
+        'small-header-spacer-mobile': '1rem',
+        'footer-spacer': '8rem',
+        'footer-spacer-mobile': '7rem',
       },
       fontSize: {
         '5xl': '5rem',
