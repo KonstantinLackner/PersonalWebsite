@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konstantin Lackner</title>
+    <link rel="icon" href="./img/favicon.png">
+  <script type="module" crossorigin src="./assets/main-CuZ1GVca.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-ClJKsMYB.css">
+</head>
+
+<body class="bg-white dark:bg-darkBlue text-center">
+
+<header class="flex justify-between items-center bg-gradient-to-r from-eyeGreen to-eyeBlue fixed top-0 left-0 w-full h-24 z-50 pt-4 px-4">
+    <a aria-label="Jumplink zur Startseite" href="./index.html"
+       class="flex items-center w-full h-full">
+        <img src="./img/BigSock.png" alt="logo showing a mountain on top of a black line"
+             class="w-auto h-full">
+        <h1 class="text-white text-3xl hidden font-thin sm:flex">Konstantin Lackner</h1>
+    </a>
+
+    <div aria-label="Burgermenü für Mobilnavigation" x-data="{ open: false }" class="relative sm:hidden">
+        <button aria-label="Öffnet Burgermenü für Mobilnavigation" @click="open = !open"
+                class="p-2 rounded focus:outline-none focus:ring">
+            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                 stroke="white">
+                <path :class="{'rotate-48 -translate-x-1 translate-y-1': open, 'translate-y-0': !open}"
+                      class="transition-transform transform origin-center" stroke-linecap="round"
+                      stroke-linejoin="round" stroke-width="2" d="M4 6h16"/>
+                <path :class="{'opacity-0': open, 'opacity-100': !open}" class="transition-opacity"
+                      stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16"/>
+                <path :class="{'-rotate-48 -translate-x-1 -translate-y-1': open, 'translate-y-0': !open}"
+                      class="transition-transform transform origin-center" stroke-linecap="round"
+                      stroke-linejoin="round" stroke-width="2" d="M4 18h16"/>
+            </svg>
+        </button>
+
+        <div x-show="open"
+             x-transition:enter="transition ease-out duration-300"
+             x-transition:enter-start="opacity-0 transform -translate-y-full"
+             x-transition:enter-end="opacity-100 transform translate-y-0"
+             x-transition:leave="transition-none"
+             class="fixed top-24 left-0 right-0 bottom-0 bg-gradient-to-r from-mainBlue to-mediumBlue z-40 flex items-start justify-left text-left font-bold py-4"
+             @click.away="open = false">
+            <div class="text-center">
+                <a aria-label="Jumplink zur Projektinformation" href="#research" @click="open = false"
+                   class="block px-4 py-4 text-3xl text-white text-left hover:bg-gray-100">Projektinformationen</a>
+                <a aria-label="Jumplink zur Projektbeschreibung" href="#gameDesign" @click="open = false"
+                   class="block px-4 py-4 text-3xl text-white text-left hover:bg-gray-100">Projektbeschreibung</a>
+                <a aria-label="Jumplink zum Konsortium" href="#reflectionsOnAcademia" @click="open = false"
+                   class="block px-4 py-4 text-3xl text-white text-left hover:bg-gray-100">Konsortium</a>
+                <a aria-label="Jumplink zur News und Publikationen" href="#Contact" @click="open = false"
+                   class="block px-4 py-4 text-3xl text-white text-left hover:bg-gray-100">News&Publikationen</a>
+                <a aria-label="Jumplink zu Kontaktmöglichkeiten" href="#contact" @click="open = false"
+                   class="block px-4 py-4 text-3xl text-white text-left hover:bg-gray-100">Kontakt</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section aria-label="Spacer" class="flex h-header-spacer-mobile sm:h-header-spacer"></section>
+    <section id="research" aria-label="Research"
+             class="px-4 scroll-mt-mobile-header sm:scroll-mt-desktop-header">
+        <div class="max-w-5xl mx-auto text-left">
+            <img src="./img/PlanStadtEdited.jpg"
+                 alt="Hausdurchsuchung banner"
+                 class="object-cover mt-4 select-none pointer-events-none p-8"
+                 draggable="false">
+
+            <h2 class="text-eyeGreen dark:text-white text-4xl sm:text-5xl mb-6 text-center">Plan(See)Stadt</h2>
+            <div class="w-full text-center p-8">
+                <p class="font-light text-eyeGreen">–A corporation with Christoff Kügler, Patrick Trollmann and Christina
+                    Tüchler–</p>
+            </div>
+            <p class="pt-2">
+                A game that was created as part of the course 187.B09 Design Thinking: Ideation at TU Wien.
+            </p>
+            <div class="pt-8 flex-col sm:flex items-start">
+                <h3 class="text-eGToEBStep1 dark:text-white text-4xl mb-6 text-left">Concept</h3>
+                <p>
+                    In a playthrough, players build a city in a 3x3 grid. They can stack cards to build two-story
+                    buildings.
+                    All building cards have a specific function that interacts with role cards. Players build a shared
+                    city
+                    round for round in discussion with each other. Each player each turn can suggest to: build a
+                    building,
+                    abandon a building or move a building. This is done only if a majority of players agree. As each
+                    player
+                    is following a specific role card's goal, they are all somewhat in conflict with each other. Hence,
+                    the
+                    main goal of the game is to elicit discussions and raise awareness on the challenges of
+                    participatory
+                    city planning.
+                </p>
+                <img src="./img/PlanstadtInGame.jpg"
+                     alt="hausdurchsuchung reporting in Der Standard"
+                     class="mt-4 select-none pointer-events-none"
+                     draggable="false">
+            </div>
+        </div>
+        <div class="max-w-5xl mx-auto text-left sm:flex items-start justify-between">
+            <div class="w-full sm:w-1/2">
+                <img src="./img/planSeeStadtCard.png"
+                     alt="hausdurchsuchung reporting in Der Standard"
+                     class="mt-4 select-none pointer-events-none px-1 sm:px-8"
+                     draggable="false">
+            </div>
+            <div class="w-full sm:w-1/2">
+                <img src="./img/planSeeStadtCard2.png"
+                     alt="hausdurchsuchung reporting in Der Standard"
+                     class="mt-4 select-none pointer-events-none px-1 sm:px-8"
+                     draggable="false">
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-gradient-to-r from-eyeGreen to-eyeBlue dark:bg-none w-full h-40 p-4">
+</footer>
+</body>
+
+</html>
