@@ -16,6 +16,7 @@ export default defineConfig({
     rollupOptions: {
       input: glob.sync(path.resolve(__dirname, "./", "*.html"))
     },
-    target: 'esnext'
+    target: 'esnext',
+    outDir: 'docs'
   },
 });
