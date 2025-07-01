@@ -9,6 +9,7 @@ export default {
       'greyBlue': '#ced0d6',
       'darkGrey': '#626468',
       'lightGrey': '#b0b0b0',
+      'veryDarkGrey': '#0f0f0f',
       'black': '#000000',
       'white': '#ffffff',
       'mediumDarkBlue': '#1b3669',
