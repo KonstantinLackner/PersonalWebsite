@@ -36,7 +36,7 @@ export default {
         '10': '0.1'
       },
       scrollMargin: {
-        'mobile-header': '130px',
+        'mobile-header': '70px',
         'desktop-header': '80px'
       },
       rotate: {
@@ -44,7 +44,7 @@ export default {
       },
       spacing: {
         'header-spacer' : '8rem',
-        'header-spacer-mobile' : '7rem',
+        'header-spacer-mobile' : '3rem',
         'small-header-spacer' : '2rem',
         'small-header-spacer-mobile' : '1rem',
         'footer-spacer' : '8rem',
