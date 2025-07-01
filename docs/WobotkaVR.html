@@ -5,57 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Konstantin Lackner</title>
     <link rel="icon" href="./img/favicon.png">
-  <script type="module" crossorigin src="./assets/main-CuZ1GVca.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/main-ClJKsMYB.css">
+  <script type="module" crossorigin src="./assets/main-b_TcLyvX.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-CYJh6YIu.css">
 </head>
 
 <body class="bg-white dark:bg-darkBlue text-center">
 
-<header class="flex justify-between items-center bg-gradient-to-r from-eyeGreen to-eyeBlue fixed top-0 left-0 w-full h-24 z-50 pt-4 px-4">
+<header class="flex justify-between items-center bg-gradient-to-r from-eyeGreen to-eyeBlue fixed top-0 left-0 w-full h-header-spacer-mobile z-50 pt-4 px-4">
     <a aria-label="Jumplink zur Startseite" href="./index.html"
        class="flex items-center w-full h-full">
         <img src="./img/BigSock.png" alt="logo showing a mountain on top of a black line"
              class="w-auto h-full">
         <h1 class="text-white text-3xl hidden font-thin sm:flex">Konstantin Lackner</h1>
     </a>
-
-    <div aria-label="Burgermenü für Mobilnavigation" x-data="{ open: false }" class="relative sm:hidden">
-        <button aria-label="Öffnet Burgermenü für Mobilnavigation" @click="open = !open"
-                class="p-2 rounded focus:outline-none focus:ring">
-            <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                 stroke="white">
-                <path :class="{'rotate-48 -translate-x-1 translate-y-1': open, 'translate-y-0': !open}"
-                      class="transition-transform transform origin-center" stroke-linecap="round"
-                      stroke-linejoin="round" stroke-width="2" d="M4 6h16"/>
-                <path :class="{'opacity-0': open, 'opacity-100': !open}" class="transition-opacity"
-                      stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12h16"/>
-                <path :class="{'-rotate-48 -translate-x-1 -translate-y-1': open, 'translate-y-0': !open}"
-                      class="transition-transform transform origin-center" stroke-linecap="round"
-                      stroke-linejoin="round" stroke-width="2" d="M4 18h16"/>
-            </svg>
-        </button>
-
-        <div x-show="open"
-             x-transition:enter="transition ease-out duration-300"
-             x-transition:enter-start="opacity-0 transform -translate-y-full"
-             x-transition:enter-end="opacity-100 transform translate-y-0"
-             x-transition:leave="transition-none"
-             class="fixed top-24 left-0 right-0 bottom-0 bg-gradient-to-r from-mainBlue to-mediumBlue z-40 flex items-start justify-left text-left font-bold py-4"
-             @click.away="open = false">
-            <div class="text-center">
-                <a aria-label="Jumplink zur Projektinformation" href="#research" @click="open = false"
-                   class="block px-4 py-4 text-3xl text-white text-left hover:bg-gray-100">Projektinformationen</a>
-                <a aria-label="Jumplink zur Projektbeschreibung" href="#gameDesign" @click="open = false"
-                   class="block px-4 py-4 text-3xl text-white text-left hover:bg-gray-100">Projektbeschreibung</a>
-                <a aria-label="Jumplink zum Konsortium" href="#reflectionsOnAcademia" @click="open = false"
-                   class="block px-4 py-4 text-3xl text-white text-left hover:bg-gray-100">Konsortium</a>
-                <a aria-label="Jumplink zur News und Publikationen" href="#Contact" @click="open = false"
-                   class="block px-4 py-4 text-3xl text-white text-left hover:bg-gray-100">News&Publikationen</a>
-                <a aria-label="Jumplink zu Kontaktmöglichkeiten" href="#contact" @click="open = false"
-                   class="block px-4 py-4 text-3xl text-white text-left hover:bg-gray-100">Kontakt</a>
-            </div>
-        </div>
-    </div>
 </header>
 
 <main>
